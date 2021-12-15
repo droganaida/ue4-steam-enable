@@ -3,6 +3,8 @@
 ### 1. Включаем плагин Online Subsystem Steam
 Для этого идём в меню Edit->Plugins,  и в поисковой строке набираем что-то вроде "steam online" =)
 
+![Online Subsystem Steam enable](https://github.com/droganaida/ue4-steam-enable/blob/main/sts-1.jpg?raw=true)
+
 ### 2. Добавляем Steam App ID в свой конфиг
 Находим файл DefaultEngine.ini в папке своего проекта в подпапке Config и добавляем следующий код:
 ```
