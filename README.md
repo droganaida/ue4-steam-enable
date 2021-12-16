@@ -4,7 +4,7 @@
 ### 1. Включаем плагин Online Subsystem Steam
 Для этого идём в меню Edit->Plugins,  и в поисковой строке набираем что-то вроде "steam online" =)
 
-![Online Subsystem Steam enable](https://github.com/droganaida/ue4-steam-enable/blob/main/sts-1.jpg?raw=true)
+![Online Subsystem Steam enable](https://github.com/droganaida/ue4-steam-enable/blob/main/sts-1-1.jpg?raw=true)
 
 ---
 
