@@ -6,7 +6,7 @@
 ![Online Subsystem Steam enable](https://github.com/droganaida/ue4-steam-enable/blob/main/sts-1.jpg?raw=true)
 
 ### 2. Добавляем Steam App ID в свой конфиг
-Находим файл DefaultEngine.ini в папке своего проекта Your_Game/Config/DefaultEngine.ini и добавляем следующий код:
+Находим файл DefaultEngine.ini в папке своего проекта **\Название_Игры\Config\DefaultEngine.ini** и добавляем следующий код:
 ```
 [/Script/Engine.GameEngine]
 +NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="OnlineSubsystemSteam.SteamNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
@@ -22,7 +22,7 @@ SteamDevAppId=480
 NetConnectionClassName="OnlineSubsystemSteam.SteamNetConnection"
 ```
 ![Steam App ID](https://github.com/droganaida/ue4-steam-enable/blob/main/sts-2.jpg?raw=true)
-ID=480 - это код игры Spacewar от Valve, его можно использовать для теста своих игр ;)
+*ID=480 - это код игры Spacewar от Valve, его можно использовать для теста своих игр ;)*
 
 ### 3. Пакуем игру под свою систему, но обязательно как Shipping Build
 Меню Edit->Project Settings, раздел Packaging
@@ -30,7 +30,7 @@ ID=480 - это код игры Spacewar от Valve, его можно испо�
 ![Packaging](https://github.com/droganaida/ue4-steam-enable/blob/main/sts-3.jpg?raw=true)
 
 ### 4. Добавляем steam_appid.txt
-Создайте текстовый файл в папке с готовым билдом игры в подпапке \Название_Игры\Binaries\Win64
+Создайте текстовый файл в папке с готовым билдом игры **\Название_Игры\Binaries\Win64\steam_appid.txt**
 В этом файле только 1 строчка с ID нашей игры:
 ```
 480
@@ -44,5 +44,5 @@ ID=480 - это код игры Spacewar от Valve, его можно испо�
 
 ![Download Region Steam](https://github.com/droganaida/ue4-steam-enable/blob/main/sts-5.jpg?raw=true)
 
-Если у вас в игре есть галочка LAN, убираем её и для хоста, и для поиска сервера.
+Если у вас в еастройках игры есть галочка LAN, убираем её и для хоста, и при подключении во время поиска сервера.
 
