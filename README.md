@@ -6,7 +6,7 @@
 ![Online Subsystem Steam enable](https://github.com/droganaida/ue4-steam-enable/blob/main/sts-1.jpg?raw=true)
 
 ### 2. Добавляем Steam App ID в свой конфиг
-Находим файл DefaultEngine.ini в папке своего проекта в подпапке Config и добавляем следующий код:
+Находим файл DefaultEngine.ini в папке своего проекта Your_Game/Config/DefaultEngine.ini и добавляем следующий код:
 ```
 [/Script/Engine.GameEngine]
 +NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="OnlineSubsystemSteam.SteamNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
